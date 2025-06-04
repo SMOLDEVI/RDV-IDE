@@ -1,0 +1,146 @@
+/* --- Базовый фон --- */
+QDialog, QWidget, QMainWindow {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    border: none;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 12pt;
+}
+
+/* --- Фон главного окна с лёгким градиентом --- */
+QMainWindow {
+    background-color: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #1e1e1e,
+        stop:1 #252525
+    );
+}
+
+/* --- Окно со слайдером --- */
+QDialog {
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* --- Слайдер --- */
+QSlider {
+    background: #2d2d2d;
+    border-radius: 5px;
+    height: 10px;
+}
+
+QSlider::handle {
+    background: #00b4ff;
+    border-radius: 5px;
+    width: 15px;
+    height: 15px;
+}
+
+QSlider::handle:hover {
+    background: #007acc;
+}
+
+QSlider::add-page {
+    background: #404040;
+    border-radius: 5px;
+}
+
+QSlider::sub-page {
+    background: #1e1e1e;
+    border-radius: 5px;
+}
+
+/* --- Кнопки в диалогах --- */
+QDialogButtonBox {
+    background-color: #2d2d2d;
+    color: #cccccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+QDialogButtonBox::button {
+    background: #3a3a3a;
+    color: #cccccc;
+    border-radius: 5px;
+    padding: 6px 12px;
+    border: 1px solid #3c3c3c;
+}
+
+QDialogButtonBox::button:hover {
+    background-color: #007acc;
+    color: white;
+}
+
+/* --- Метки в окне со слайдером --- */
+QLabel {
+    color: #cccccc;
+    font-size: 14px;
+    padding: 10px;
+}
+
+/* --- Меню и контекстное меню --- */
+QMenu {
+    background-color: #2d2d2d;
+    color: #cccccc;
+    border: 1px solid #3c3c3c;
+}
+
+QMenu::item:selected {
+    background-color: #007acc;
+    color: #ffffff;
+}
+
+/* --- Панель вкладок --- */
+QTabWidget::pane {
+    border: none;
+    background-color: #1e1e1e;
+}
+
+/* --- Вкладки --- */
+QTabBar::tab {
+    background: #2d2d2d;
+    color: #cccccc;
+    padding: 6px 14px;
+    margin: 0px;
+    border: none;
+    font-weight: normal;
+}
+
+QTabBar::tab:selected {
+    background: #1e1e1e;
+    color: white;
+    border-top: 2px solid #00b4ff;
+}
+
+QTabBar::tab:hover {
+    background: #404040;
+    color: #ffffff;
+}
+
+/* --- Скроллбары --- */
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: #1e1e1e;
+    width: 8px;
+    height: 8px;
+    margin: 2px;
+    border: none;
+}
+
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background: #5a5a5a;
+    min-height: 20px;
+    border-radius: 7px;
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+    background: none;
+    border: none;
+}
+
+/* --- Выделение текста --- */
+QPlainTextEdit::selection {
+    background-color: #264f78;
+    color: #ffffff;
+}
