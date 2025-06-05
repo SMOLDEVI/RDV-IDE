@@ -16,3 +16,6 @@ Simple IDE on Python with PyQt6
 1. Клонируйте репозиторий:
    ```bash 
    git clone https://github.com/SMOLDEVI/SimpleIDE.git
+
+2. Release page
+   https://github.com/SMOLDEVI/SimpleIDE/releases/tag/release
