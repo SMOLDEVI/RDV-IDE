@@ -1,4 +1,4 @@
-# SimpleIDE
+# RDV IDE
 Simple IDE on Python with PyQt6
 
 Простая легковесная IDE для Python, написанная на Python с использованием PyQt6. Предназначена для быстрого редактирования кода с базовыми функциями.
